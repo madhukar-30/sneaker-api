@@ -101,7 +101,7 @@ Content-Type: application/json
   "gender": "Unisex",
   "category": "Lifestyle"
 }
-
+```
 #### Sample Response
 {
   "status": "success",
