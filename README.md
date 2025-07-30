@@ -203,5 +203,11 @@ We welcome contributions! Follow these steps:
 4. Push to branch: git push origin feature/your-feature
 5. Open a Pull Request
 ```
+## 📬 Contact
 
+**Manas Madhukar**  
+✉️ [manasmadhukar30@gmail.com](mailto:manasmadhukar30@gmail.com)  
+🌐 [GitHub Profile](https://github.com/madhukar-30)
+
+💬 *For API support, collaborations, or inquiries*
 
