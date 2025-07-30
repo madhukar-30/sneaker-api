@@ -1,0 +1,682 @@
+[
+  {
+    "name": "Nike Air Max 90",
+    "pageUrl": "/sneakers/nike-air-max-90",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 6792
+      },
+      {
+        "size": 7,
+        "price": 6215
+      },
+      {
+        "size": 8,
+        "price": 7032
+      },
+      {
+        "size": 9,
+        "price": 9886
+      },
+      {
+        "size": 10,
+        "price": 6570
+      },
+      {
+        "size": 11,
+        "price": 8113
+      }
+    ],
+    "gender": "Women",
+    "fresh": true,
+    "category": "Lifestyle",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883323/Nike_Air_Max_90_cmngqv.jpg"
+  },
+  {
+    "name": "Adidas Ultraboost",
+    "pageUrl": "/sneakers/adidas-ultraboost",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 9875
+      },
+      {
+        "size": 7,
+        "price": 6990
+      },
+      {
+        "size": 8,
+        "price": 6043
+      },
+      {
+        "size": 9,
+        "price": 9191
+      },
+      {
+        "size": 10,
+        "price": 9314
+      },
+      {
+        "size": 11,
+        "price": 8838
+      }
+    ],
+    "gender": "Women",
+    "fresh": true,
+    "category": "Running",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883320/Adidas_Ultraboost_wpl8vu.jpg"
+  },
+  {
+    "name": "Converse Chuck Taylor",
+    "pageUrl": "/sneakers/converse-chuck-taylor",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 4051
+      },
+      {
+        "size": 7,
+        "price": 4883
+      },
+      {
+        "size": 8,
+        "price": 4926
+      },
+      {
+        "size": 9,
+        "price": 5016
+      },
+      {
+        "size": 10,
+        "price": 4639
+      },
+      {
+        "size": 11,
+        "price": 3131
+      }
+    ],
+    "gender": "Women",
+    "fresh": true,
+    "category": "Basketball",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883322/Converse_Chuck_Taylor_j1ytoq.jpg"
+  },
+  {
+    "name": "Puma RS-X",
+    "pageUrl": "/sneakers/puma-rs-x",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 5027
+      },
+      {
+        "size": 7,
+        "price": 6467
+      },
+      {
+        "size": 8,
+        "price": 4893
+      },
+      {
+        "size": 9,
+        "price": 6776
+      },
+      {
+        "size": 10,
+        "price": 4124
+      },
+      {
+        "size": 11,
+        "price": 6298
+      }
+    ],
+    "gender": "Unisex",
+    "fresh": true,
+    "category": "Skateboarding",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883328/Puma_RS-X_p6m2a9.jpg"
+  },
+  {
+    "name": "Reebok Classic",
+    "pageUrl": "/sneakers/reebok-classic",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 8396
+      },
+      {
+        "size": 7,
+        "price": 6555
+      },
+      {
+        "size": 8,
+        "price": 5765
+      },
+      {
+        "size": 9,
+        "price": 4379
+      },
+      {
+        "size": 10,
+        "price": 4858
+      },
+      {
+        "size": 11,
+        "price": 6205
+      }
+    ],
+    "gender": "Women",
+    "fresh": true,
+    "category": "Basketball",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883330/Reebok_Classic_ndsr2d.jpg"
+  },
+  {
+    "name": "New Balance 574",
+    "pageUrl": "/sneakers/new-balance-574",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 9050
+      },
+      {
+        "size": 7,
+        "price": 8428
+      },
+      {
+        "size": 8,
+        "price": 8546
+      },
+      {
+        "size": 9,
+        "price": 8545
+      },
+      {
+        "size": 10,
+        "price": 8865
+      },
+      {
+        "size": 11,
+        "price": 8874
+      }
+    ],
+    "gender": "Unisex",
+    "fresh": false,
+    "category": "Basketball",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883325/New_Balance_574_kipseb.jpg"
+  },
+  {
+    "name": "Nike Air Force 1",
+    "pageUrl": "/sneakers/nike-air-force-1",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 7272
+      },
+      {
+        "size": 7,
+        "price": 6175
+      },
+      {
+        "size": 8,
+        "price": 7026
+      },
+      {
+        "size": 9,
+        "price": 10165
+      },
+      {
+        "size": 10,
+        "price": 6431
+      },
+      {
+        "size": 11,
+        "price": 8514
+      }
+    ],
+    "gender": "Men",
+    "fresh": false,
+    "category": "Skateboarding",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883321/Nike_Air_Force_1_ttkxzb.jpg"
+  },
+  {
+    "name": "Vans Old Skool",
+    "pageUrl": "/sneakers/vans-old-skool",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 4024
+      },
+      {
+        "size": 7,
+        "price": 6725
+      },
+      {
+        "size": 8,
+        "price": 6423
+      },
+      {
+        "size": 9,
+        "price": 6117
+      },
+      {
+        "size": 10,
+        "price": 6902
+      },
+      {
+        "size": 11,
+        "price": 6113
+      }
+    ],
+    "gender": "Women",
+    "fresh": true,
+    "category": "Casual",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883330/Vans_Old_Skool_dkou2k.jpg"
+  },
+  {
+    "name": "Adidas Yeezy Boost 350",
+    "pageUrl": "/sneakers/adidas-yeezy-boost-350",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 10004
+      },
+      {
+        "size": 7,
+        "price": 10018
+      },
+      {
+        "size": 8,
+        "price": 6990
+      },
+      {
+        "size": 9,
+        "price": 6226
+      },
+      {
+        "size": 10,
+        "price": 6537
+      },
+      {
+        "size": 11,
+        "price": 9148
+      }
+    ],
+    "gender": "Men",
+    "fresh": false,
+    "category": "Running",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883322/Adidas_Yeezy_Boost_350_xfnmz3.jpg"
+  },
+  {
+    "name": "Jordan 1 Retro High",
+    "pageUrl": "/sneakers/jordan-1-retro-high",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 13853
+      },
+      {
+        "size": 7,
+        "price": 12533
+      },
+      {
+        "size": 8,
+        "price": 11876
+      },
+      {
+        "size": 9,
+        "price": 14304
+      },
+      {
+        "size": 10,
+        "price": 14827
+      },
+      {
+        "size": 11,
+        "price": 14241
+      }
+    ],
+    "gender": "Unisex",
+    "fresh": true,
+    "category": "Skateboarding",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883325/Jordan_1_Retro_High_baz3l7.jpg"
+  },
+  {
+    "name": "Nike Dunk Low",
+    "pageUrl": "/sneakers/nike-dunk-low",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 7756
+      },
+      {
+        "size": 7,
+        "price": 11795
+      },
+      {
+        "size": 8,
+        "price": 7329
+      },
+      {
+        "size": 9,
+        "price": 7963
+      },
+      {
+        "size": 10,
+        "price": 7572
+      },
+      {
+        "size": 11,
+        "price": 8050
+      }
+    ],
+    "gender": "Unisex",
+    "fresh": true,
+    "category": "Lifestyle",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883325/Nike_Dunk_Low_ijvtjn.jpg"
+  },
+  {
+    "name": "ASICS Gel-Kayano",
+    "pageUrl": "/sneakers/asics-gel-kayano",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 5022
+      },
+      {
+        "size": 7,
+        "price": 8718
+      },
+      {
+        "size": 8,
+        "price": 8251
+      },
+      {
+        "size": 9,
+        "price": 6673
+      },
+      {
+        "size": 10,
+        "price": 6719
+      },
+      {
+        "size": 11,
+        "price": 5405
+      }
+    ],
+    "gender": "Men",
+    "fresh": true,
+    "category": "Skateboarding",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883325/ASICS_Gel-Kayano_gukynp.jpg"
+  },
+  {
+    "name": "Under Armour Curry 8",
+    "pageUrl": "/sneakers/under-armour-curry-8",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 7808
+      },
+      {
+        "size": 7,
+        "price": 9151
+      },
+      {
+        "size": 8,
+        "price": 6954
+      },
+      {
+        "size": 9,
+        "price": 7309
+      },
+      {
+        "size": 10,
+        "price": 7326
+      },
+      {
+        "size": 11,
+        "price": 5374
+      }
+    ],
+    "gender": "Women",
+    "fresh": false,
+    "category": "Running",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883331/Under_Armour_Curry_8_j1i5v5.jpg"
+  },
+  {
+    "name": "Reebok Zig Kinetica",
+    "pageUrl": "/sneakers/reebok-zig-kinetica",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 7865
+      },
+      {
+        "size": 7,
+        "price": 6098
+      },
+      {
+        "size": 8,
+        "price": 7752
+      },
+      {
+        "size": 9,
+        "price": 4304
+      },
+      {
+        "size": 10,
+        "price": 7740
+      },
+      {
+        "size": 11,
+        "price": 4816
+      }
+    ],
+    "gender": "Men",
+    "fresh": false,
+    "category": "Running",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883332/Reebok_Zig_Kinetica_foh4g8.jpg"
+  },
+  {
+    "name": "Nike Blazer Mid",
+    "pageUrl": "/sneakers/nike-blazer-mid",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 6779
+      },
+      {
+        "size": 7,
+        "price": 9465
+      },
+      {
+        "size": 8,
+        "price": 9759
+      },
+      {
+        "size": 9,
+        "price": 8277
+      },
+      {
+        "size": 10,
+        "price": 10338
+      },
+      {
+        "size": 11,
+        "price": 11565
+      }
+    ],
+    "gender": "Unisex",
+    "fresh": false,
+    "category": "Basketball",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883325/Nike_Blazer_Mid_afsssu.jpg"
+  },
+  {
+    "name": "Fila Disruptor II",
+    "pageUrl": "/sneakers/fila-disruptor-ii",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 4927
+      },
+      {
+        "size": 7,
+        "price": 3177
+      },
+      {
+        "size": 8,
+        "price": 3683
+      },
+      {
+        "size": 9,
+        "price": 4375
+      },
+      {
+        "size": 10,
+        "price": 5819
+      },
+      {
+        "size": 11,
+        "price": 4568
+      }
+    ],
+    "gender": "Men",
+    "fresh": false,
+    "category": "Skateboarding",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883328/Fila_Disruptor_II_jsk2bu.jpg"
+  },
+  {
+    "name": "Saucony Jazz Original",
+    "pageUrl": "/sneakers/saucony-jazz-original",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 6855
+      },
+      {
+        "size": 7,
+        "price": 6214
+      },
+      {
+        "size": 8,
+        "price": 5767
+      },
+      {
+        "size": 9,
+        "price": 7075
+      },
+      {
+        "size": 10,
+        "price": 8230
+      },
+      {
+        "size": 11,
+        "price": 6112
+      }
+    ],
+    "gender": "Women",
+    "fresh": false,
+    "category": "Lifestyle",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883329/Saucony_Jazz_Original_rpczrf.jpg"
+  },
+  {
+    "name": "Adidas NMD R1",
+    "pageUrl": "/sneakers/adidas-nmd-r1",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 6712
+      },
+      {
+        "size": 7,
+        "price": 10090
+      },
+      {
+        "size": 8,
+        "price": 7282
+      },
+      {
+        "size": 9,
+        "price": 10456
+      },
+      {
+        "size": 10,
+        "price": 6102
+      },
+      {
+        "size": 11,
+        "price": 9602
+      }
+    ],
+    "gender": "Unisex",
+    "fresh": false,
+    "category": "Running",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883321/Adidas_NMD_R1_cren5z.jpg"
+  },
+  {
+    "name": "Nike LeBron 20",
+    "pageUrl": "/sneakers/nike-lebron-20",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 6097
+      },
+      {
+        "size": 7,
+        "price": 6787
+      },
+      {
+        "size": 8,
+        "price": 8448
+      },
+      {
+        "size": 9,
+        "price": 10950
+      },
+      {
+        "size": 10,
+        "price": 6120
+      },
+      {
+        "size": 11,
+        "price": 6455
+      }
+    ],
+    "gender": "Men",
+    "fresh": false,
+    "category": "Lifestyle",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883328/Nike_LeBron_20_pgpefi.jpg"
+  },
+  {
+    "name": "On Cloudswift",
+    "pageUrl": "/sneakers/on-cloudswift",
+    "sizes": [
+      {
+        "size": 6,
+        "price": 11447
+      },
+      {
+        "size": 7,
+        "price": 12262
+      },
+      {
+        "size": 8,
+        "price": 10413
+      },
+      {
+        "size": 9,
+        "price": 12047
+      },
+      {
+        "size": 10,
+        "price": 11440
+      },
+      {
+        "size": 11,
+        "price": 9835
+      }
+    ],
+    "gender": "Unisex",
+    "fresh": true,
+    "category": "Lifestyle",
+    "image": "https://res.cloudinary.com/dqugpytah/image/upload/v1753883330/On_Cloudswift_qmxbza.jpg"
+  }
+]
