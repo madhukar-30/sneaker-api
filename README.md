@@ -101,8 +101,8 @@ Content-Type: application/json
   "gender": "Unisex",
   "category": "Lifestyle"
 }
-
-#### 1.2. Sample Response
+```
+####  Sample Response:
 ```
 {
   "status": "success",
@@ -121,3 +121,87 @@ Content-Type: application/json
 }
 ```
 ### 2. Update Sneaker Sizes
+```
+PUT /api/sneakers/662a1b2e4c3d5f0017a8b9c0
+Content-Type: application/json
+
+{
+  "sizes": [
+    {"size": 9, "price": 125},
+    {"size": 10, "price": 130}
+  ]
+}
+```
+#### Sample Response:
+```
+{
+  "status": "success",
+  "message": "Sneaker sizes updated",
+  "data": {
+    "sizes": [
+      {"size": 9, "price": 125, "_id": "663b1d7f8d2e4f0018d4e7b3"},
+      {"size": 10, "price": 130, "_id": "663b1d7f8d2e4f0018d4e7b4"}
+    ]
+  }
+}
+```
+### 3. Get All Sneakers
+```
+GET /api/sneakers
+```
+#### Sample Response:
+```
+{
+  "status": "success",
+  "results": 15,
+  "data": [
+    {
+      "_id": "662a1b2e4c3d5f0017a8b9c0",
+      "name": "Nike Air Max 90",
+      "image": "https://res.cloudinary.com/.../airmax90.jpg",
+      "sizes": [
+        {"size": 8, "price": 120, "_id": "663b1c5a8d2e4f0018d4e7a1"},
+        {"size": 9, "price": 125, "_id": "663b1c5a8d2e4f0018d4e7a2"}
+      ],
+      "gender": "Men",
+      "category": "Lifestyle",
+      "isFresh": true
+    },
+    // ... other sneakers
+  ]
+}
+```
+### 4. Get Specific Sneaker
+```
+GET /api/sneakers/662a1b2e4c3d5f0017a8b9c0
+```
+#### Sample Response:
+```
+{
+  "status": "success",
+  "data": {
+    "_id": "662a1b2e4c3d5f0017a8b9c0",
+    "name": "Adidas Ultraboost",
+    "image": "https://res.cloudinary.com/.../ultraboost.jpg",
+    "sizes": [
+      {"size": 8, "price": 180, "_id": "663b1e9a8d2e4f0018d4e7c5"},
+      {"size": 9, "price": 185, "_id": "663b1e9a8d2e4f0018d4e7c6"}
+    ],
+    "gender": "Women",
+    "category": "Running",
+    "isFresh": false
+  }
+}
+```
+
+## 🤝 Contribution
+We welcome contributions! Follow these steps:
+```bash
+1. Fork the repository
+2. Create feature branch: git checkout -b feature/your-feature
+3. Commit changes: git commit -m 'Add amazing feature'
+4. Push to branch: git push origin feature/your-feature
+5. Open a Pull Request
+```
+
+
