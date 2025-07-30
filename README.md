@@ -40,7 +40,7 @@ sneaker-api/
 ├── server.js        # Entry point
 ├── .env.example     # Environment template
 └── .gitignore
-
+```
 ## 🚀 Quick Start
 
 Get up and running in 5 minutes:
@@ -63,7 +63,7 @@ node seed.js
 
 # 5. Start server
 node server.js
-
+```
 
 ## 📊 Sample Data Model
 ```json
@@ -79,3 +79,7 @@ node server.js
   "category": "Lifestyle",
   "isFresh": true
 }
+
+
+}
+```
