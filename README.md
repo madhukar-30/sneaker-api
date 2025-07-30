@@ -81,5 +81,42 @@ node server.js
 }
 
 
+
+```
+
+## 🧪 Testing Endpoints
+
+### 1. Create New Sneaker
+```http
+POST /api/sneakers
+Content-Type: application/json
+
+{
+  "name": "New Balance 550",
+  "image": "https://res.cloudinary.com/.../nb550.jpg",
+  "sizes": [
+    {"size": 7, "price": 110},
+    {"size": 8, "price": 115}
+  ],
+  "gender": "Unisex",
+  "category": "Lifestyle"
+}
+
+### Sample Response
+{
+  "status": "success",
+  "data": {
+    "_id": "662a1b2e4c3d5f0017a8b9c0",
+    "name": "New Balance 550",
+    "image": "https://res.cloudinary.com/.../nb550.jpg",
+    "sizes": [
+      {"size": 7, "price": 110, "_id": "663b1c5a8d2e4f0018d4e7a1"},
+      {"size": 8, "price": 115, "_id": "663b1c5a8d2e4f0018d4e7a2"}
+    ],
+    "gender": "Unisex",
+    "category": "Lifestyle",
+    "isFresh": true
+  }
 }
 ```
+### 2. Update Sneaker Sizes
