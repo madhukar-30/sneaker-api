@@ -102,7 +102,7 @@ Content-Type: application/json
   "category": "Lifestyle"
 }
 ```
-####1.2. Sample Response
+#### 1.2. Sample Response
 ```
 {
   "status": "success",
