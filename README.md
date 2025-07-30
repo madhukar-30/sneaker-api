@@ -102,7 +102,7 @@ Content-Type: application/json
   "category": "Lifestyle"
 }
 
-### Sample Response
+#### Sample Response
 {
   "status": "success",
   "data": {
