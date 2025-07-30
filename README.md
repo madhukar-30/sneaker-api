@@ -207,7 +207,7 @@ We welcome contributions! Follow these steps:
 
 **Manas Madhukar**  
 ✉️ [manasmadhukar30@gmail.com](mailto:manasmadhukar30@gmail.com)  
-🌐 [GitHub Profile](https://github.com/madhukar-30)
+🌐 [madhukar-30](https://github.com/madhukar-30)
 
 💬 *For API support, collaborations, or inquiries*
 
