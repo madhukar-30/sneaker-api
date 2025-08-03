@@ -5,13 +5,35 @@ export default async function handler(req, res) {
   await connectDB();
 
   if (req.method === 'GET') {
+    const { id } = req.query;
+
+    if (id) {
+      try {
+        const sneaker = await Sneaker.findById(id);
+        if (!sneaker) {
+          return res.status(404).json({ message: 'Sneaker not found' });
+        }
+        return res.status(200).json(sneaker);
+      } catch (error) {
+        return res.status(500).json({ message: 'Invalid ID format', error });
+      }
+    }
+
     const sneakers = await Sneaker.find();
-    res.status(200).json(sneakers);
-  } else if (req.method === 'POST') {
-    const sneaker = new Sneaker(req.body);
-    await sneaker.save();
-    res.status(201).json(sneaker);
-  } else {
+    return res.status(200).json(sneakers);
+  }
+
+  else if (req.method === 'POST') {
+    try {
+      const sneaker = new Sneaker(req.body);
+      await sneaker.save();
+      res.status(201).json(sneaker);
+    } catch (error) {
+      res.status(400).json({ message: 'Failed to create sneaker', error });
+    }
+  }
+
+  else {
     res.status(405).json({ message: 'Method not allowed' });
   }
 }
