@@ -51,7 +51,7 @@ sneaker-api/
 ├── vercel.json      # Vercel deployment config
 ├── .gitignore
 └── README.md
-
+```
 ## 🚀 Quick Start
 
 Get up and running in 5 minutes:
@@ -65,15 +65,15 @@ cd sneaker-api
 npm install
 
 # 3. Configure environment
-cp .env.example .env
-# Edit .env with your MongoDB URI
-nano .env
+cp .env.local.example .env.local
+# Fill in your MongoDB URI
 
-# 4. Seed database (optional)
-node seed.js
+# 4. (Optional) Seed database locally using seed.js
+# Run only if you're working outside of Vercel and need to populate the DB
 
-# 5. Deploy (Optional: Vercel CLI or dashboard)
+# 5. Deploy on Vercel
 vercel deploy
+
 
 ```
 
@@ -100,7 +100,7 @@ vercel deploy
 
 ### 1. Create New Sneaker
 ```http
-POST /api/sneakers
+POST /api/sneakers.js
 Content-Type: application/json
 
 {
@@ -134,7 +134,7 @@ Content-Type: application/json
 ```
 ### 2. Update Sneaker Sizes
 ```
-PUT /api/sneakers/662a1b2e4c3d5f0017a8b9c0
+PUT /api/sneakers.js/662a1b2e4c3d5f0017a8b9c0
 Content-Type: application/json
 
 {
@@ -159,7 +159,7 @@ Content-Type: application/json
 ```
 ### 3. Get All Sneakers
 ```
-GET /api/sneakers
+GET /api/sneakers.js
 ```
 #### Sample Response:
 ```
@@ -185,7 +185,7 @@ GET /api/sneakers
 ```
 ### 4. Get Specific Sneaker
 ```
-GET /api/sneakers/662a1b2e4c3d5f0017a8b9c0
+GET /api/sneakers.js/662a1b2e4c3d5f0017a8b9c0
 ```
 #### Sample Response:
 ```
