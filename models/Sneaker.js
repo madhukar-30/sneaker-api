@@ -1,18 +1,18 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-const sizeSchema = new mongoose.Schema({
-  size: Number,
-  price: Number
-});
-
-const sneakerSchema = new mongoose.Schema({
+const SneakerSchema = new mongoose.Schema({
   name: String,
   pageUrl: String,
-  sizes: [sizeSchema],
+  sizes: [
+    {
+      size: Number,
+      price: Number
+    }
+  ],
   gender: String,
   fresh: Boolean,
   category: String,
   image: String
 });
 
-module.exports = mongoose.model('Sneaker', sneakerSchema);
+export default mongoose.models.Sneaker || mongoose.model('Sneaker', SneakerSchema);
