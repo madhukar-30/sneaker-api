@@ -5,41 +5,52 @@ A high-performance REST API for sneaker e-commerce applications, built with Node
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ![GitHub repo size](https://img.shields.io/github/repo-size/madhukar-30/sneaker-api)
 
+---
+
 ## 🌟 Features
+
 - **Product Management**
-  - `GET /api/sneakers`: Retrieve all sneakers
-  - `POST /api/sneakers`: Add new sneaker
-  - `PUT /api/sneakers/:id`: Update existing sneaker
+  - `GET /api/sneakers.js`: Retrieve all sneakers
+  - `POST /api/sneakers.js`: Add new sneaker
+  - `PUT /api/sneakers.js?id=<sneaker_id>`: Update sneaker
+  - `GET /api/sneakers.js?id=<sneaker_id>`: Get specific sneaker
 - **Rich Product Schema**
-  - Name, description & Cloudinary-hosted images
+  - Name, Cloudinary-hosted image, and internal product page link
   - Size-specific pricing
   - Gender classification (Men/Women/Unisex)
   - Category (Running/Lifestyle/Basketball)
   - `isFresh` flag for new arrivals
-- **Scalable Architecture**
-  - MVC pattern implementation
+- **Serverless & Scalable**
+  - Vercel serverless function-based architecture
   - MongoDB Atlas cloud database
-  - Environment configuration support
+  - Environment configuration via `.env.local` and Vercel dashboard
+
+---
 
 ## 🛠 Tech Stack
-| Area        | Technologies              |
-|-------------|---------------------------|
-| **Backend** | Node.js, Express.js       |
-| **Database**| MongoDB (Mongoose ODM)    |
-| **Tools**   | Postman, Thunder Client   |
+
+| Area        | Technologies                    |
+|-------------|---------------------------------|
+| **Backend** | Node.js (Vercel Serverless)     |
+| **Database**| MongoDB (Mongoose ODM)          |
+| **Tools**   | Postman, Thunder Client         |
+
+---
 
 ## 📁 Project Structure
+
 ```bash
 sneaker-api/
-├── models/          # Mongoose schemas
-│   └── sneaker.js
-├── routes/          # API endpoints
+├── api/             # Serverless function endpoints
 │   └── sneakers.js
-├── data/            # Sample JSON data
-├── seed.js          # Database seeder
-├── server.js        # Entry point
-├── .env.example     # Environment template
-└── .gitignore
+├── models/          # Mongoose schemas
+│   └── Sneaker.js
+├── utils/           # MongoDB connection
+│   └── db.js
+├── .env.local       # Environment variables (local use only)
+├── vercel.json      # Vercel deployment config
+├── .gitignore
+└── README.md
 ```
 ## 🚀 Quick Start
 
@@ -54,15 +65,16 @@ cd sneaker-api
 npm install
 
 # 3. Configure environment
-cp .env.example .env
-# Edit .env with your MongoDB URI
-nano .env
+cp .env.local.example .env.local
+# Fill in your MongoDB URI
 
-# 4. Seed database (optional)
-node seed.js
+# 4. (Optional) Seed database locally using seed.js
+# Run only if you're working outside of Vercel and need to populate the DB
 
-# 5. Start server
-node server.js
+# 5. Deploy on Vercel
+vercel deploy
+
+
 ```
 
 ## 📊 Sample Data Model
@@ -88,7 +100,7 @@ node server.js
 
 ### 1. Create New Sneaker
 ```http
-POST /api/sneakers
+POST /api/sneakers.js
 Content-Type: application/json
 
 {
@@ -122,7 +134,7 @@ Content-Type: application/json
 ```
 ### 2. Update Sneaker Sizes
 ```
-PUT /api/sneakers/662a1b2e4c3d5f0017a8b9c0
+PUT /api/sneakers.js/662a1b2e4c3d5f0017a8b9c0
 Content-Type: application/json
 
 {
@@ -147,7 +159,7 @@ Content-Type: application/json
 ```
 ### 3. Get All Sneakers
 ```
-GET /api/sneakers
+GET /api/sneakers.js
 ```
 #### Sample Response:
 ```
@@ -173,7 +185,7 @@ GET /api/sneakers
 ```
 ### 4. Get Specific Sneaker
 ```
-GET /api/sneakers/662a1b2e4c3d5f0017a8b9c0
+GET /api/sneakers.js/662a1b2e4c3d5f0017a8b9c0
 ```
 #### Sample Response:
 ```
