@@ -5,42 +5,53 @@ A high-performance REST API for sneaker e-commerce applications, built with Node
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ![GitHub repo size](https://img.shields.io/github/repo-size/madhukar-30/sneaker-api)
 
+---
+
 ## 🌟 Features
+
 - **Product Management**
-  - `GET /api/sneakers`: Retrieve all sneakers
-  - `POST /api/sneakers`: Add new sneaker
-  - `PUT /api/sneakers/:id`: Update existing sneaker
+  - `GET /api/sneakers.js`: Retrieve all sneakers
+  - `POST /api/sneakers.js`: Add new sneaker
+  - `PUT /api/sneakers.js?id=<sneaker_id>`: Update sneaker
+  - `GET /api/sneakers.js?id=<sneaker_id>`: Get specific sneaker
 - **Rich Product Schema**
-  - Name, description & Cloudinary-hosted images
+  - Name, Cloudinary-hosted image, and internal product page link
   - Size-specific pricing
   - Gender classification (Men/Women/Unisex)
   - Category (Running/Lifestyle/Basketball)
   - `isFresh` flag for new arrivals
-- **Scalable Architecture**
-  - MVC pattern implementation
+- **Serverless & Scalable**
+  - Vercel serverless function-based architecture
   - MongoDB Atlas cloud database
-  - Environment configuration support
+  - Environment configuration via `.env.local` and Vercel dashboard
+
+---
 
 ## 🛠 Tech Stack
-| Area        | Technologies              |
-|-------------|---------------------------|
-| **Backend** | Node.js, Express.js       |
-| **Database**| MongoDB (Mongoose ODM)    |
-| **Tools**   | Postman, Thunder Client   |
+
+| Area        | Technologies                    |
+|-------------|---------------------------------|
+| **Backend** | Node.js (Vercel Serverless)     |
+| **Database**| MongoDB (Mongoose ODM)          |
+| **Tools**   | Postman, Thunder Client         |
+
+---
 
 ## 📁 Project Structure
+
 ```bash
 sneaker-api/
-├── models/          # Mongoose schemas
-│   └── sneaker.js
-├── routes/          # API endpoints
+├── api/             # Serverless function endpoints
 │   └── sneakers.js
-├── data/            # Sample JSON data
-├── seed.js          # Database seeder
-├── server.js        # Entry point
-├── .env.example     # Environment template
-└── .gitignore
-```
+├── models/          # Mongoose schemas
+│   └── Sneaker.js
+├── utils/           # MongoDB connection
+│   └── db.js
+├── .env.local       # Environment variables (local use only)
+├── vercel.json      # Vercel deployment config
+├── .gitignore
+└── README.md
+
 ## 🚀 Quick Start
 
 Get up and running in 5 minutes:
@@ -61,8 +72,9 @@ nano .env
 # 4. Seed database (optional)
 node seed.js
 
-# 5. Start server
-node server.js
+# 5. Deploy (Optional: Vercel CLI or dashboard)
+vercel deploy
+
 ```
 
 ## 📊 Sample Data Model
