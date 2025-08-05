@@ -134,7 +134,7 @@ Content-Type: application/json
 ```
 ### 2. Update Sneaker Sizes
 ```
-PUT /api/sneakers.js/662a1b2e4c3d5f0017a8b9c0
+PUT /api/sneakers.js?id=662a1b2e4c3d5f0017a8b9c0
 Content-Type: application/json
 
 {
@@ -185,7 +185,7 @@ GET /api/sneakers.js
 ```
 ### 4. Get Specific Sneaker
 ```
-GET /api/sneakers.js/662a1b2e4c3d5f0017a8b9c0
+GET /api/sneakers.js?id=662a1b2e4c3d5f0017a8b9c0
 ```
 #### Sample Response:
 ```
