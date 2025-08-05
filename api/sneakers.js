@@ -2,6 +2,15 @@ import connectDB from '../utils/db.js';
 import Sneaker from '../models/Sneaker.js';
 
 export default async function handler(req, res) {
+    res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+  // ✅ Step 2: Handle preflight OPTIONS request
+  if (req.method === "OPTIONS") {
+    res.status(200).end(); // Respond to CORS preflight
+    return;
+  }
   await connectDB();
 
   if (req.method === 'GET') {
