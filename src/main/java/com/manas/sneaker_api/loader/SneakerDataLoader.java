@@ -12,7 +12,8 @@ import java.io.InputStream;
 import java.util.List;
 
 @Component
-@Profile("local") // only runs in local profile
+@Profile({"local", "prod"})
+
 public class SneakerDataLoader implements CommandLineRunner {
 
     private final SneakerRepository sneakerRepository;
