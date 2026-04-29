@@ -1,11 +1,11 @@
 # Sneaker API - Backend
 
-A Spring Boot REST API for managing sneaker data including sizes, pricing, gender, and categories, built using **Java 17**, **Spring Boot**, **JPA**, and **MySQL**. The application is deployed on **Railway** with secure, environment-based configuration.
+A Spring Boot REST API for managing sneaker data including sizes, pricing, gender, and categories, built using **Java 17**, **Spring Boot**, **JPA**, and **MySQL**. The application is deployed on **Render** with secure, environment-based configuration. It also includes an **AI-powered recommendation system** using Gemini API.
 
 ---
 
 ## 🚀 Live API Base URL
-**Base URL:** https://sneaker-api-production.up.railway.app/
+**Base URL:** https://sneaker-api-dhf1.onrender.com/
 
 All endpoints are prefixed with: `/api/sneakers`
 
@@ -14,10 +14,11 @@ All endpoints are prefixed with: `/api/sneakers`
 ## ✨ Features
 * **RESTful APIs:** CRUD operations for sneaker management.
 * **ORM:** Spring Data JPA with Hibernate ORM.
-* **Database:** Managed MySQL instance on Railway.
+* **Database:** Managed MySQL instance.
 * **Secure Config:** Environment variable-based configuration.
 * **Database Automation:** Automatic table creation using Hibernate.
-* **Cloud Ready:** Production-ready deployment on the Railway platform.
+* **AI Recommendation:** Suggests sneakers based on user query using Gemini API.
+* **Cloud Deployment:** Application deployed on the Render platform.
 
 ---
 
@@ -29,7 +30,8 @@ All endpoints are prefixed with: `/api/sneakers`
 | **ORM** | Spring Data JPA (Hibernate) |
 | **Database** | MySQL |
 | **Build Tool** | Maven |
-| **Deployment** | Railway |
+| **Deployment** | Render |
+| **AI Integration** | Gemini API |
 
 ---
 
@@ -42,6 +44,7 @@ All endpoints are prefixed with: `/api/sneakers`
 | **Get Sneaker by ID** | `GET` | `/api/sneakers/{id}` |
 | **Update Sneaker** | `PUT` | `/api/sneakers/{id}` |
 | **Delete Sneaker** | `DELETE` | `/api/sneakers/{id}` |
+| **AI Suggestion** | `POST` | `/api/sneakers/ai/suggest` |
 
 ### Request Body Format (POST/PUT)
 {
@@ -58,6 +61,9 @@ All endpoints are prefixed with: `/api/sneakers`
     }
   ]
 }
+
+### Request Body Format (AI Suggestion)
+"running shoes for men"
 
 ---
 
@@ -76,11 +82,12 @@ In your `src/main/resources/application.properties`, the following properties ar
 * server.port=${PORT:8080}
 
 ### Environment Variables
-For the application to connect to the database, ensure these variables are set in your local environment or Railway dashboard:
+For the application to connect to the database and AI service, ensure these variables are set in your local environment or Render dashboard:
 
 * MYSQL_URL: jdbc:mysql://${MYSQLHOST}:${MYSQLPORT}/${MYSQLDATABASE}?useSSL=false&allowPublicKeyRetrieval=true
 * MYSQL_USER: <database-username>
 * MYSQL_PASSWORD: <database-password>
+* GEMINI_API_KEY: <your-api-key>
 
 ---
 
@@ -92,7 +99,7 @@ mvn spring-boot:run
 ---
 
 ## ☁️ Deployment
-The application is deployed on **Railway** as a Web Service and utilizes **Railway MySQL**. **Hibernate** is configured to automatically create and update database tables on startup.
+The application is deployed on **Render** as a Web Service and connects to a managed **MySQL database**. Hibernate automatically creates and updates database tables on startup.
 
 ---
 
@@ -103,7 +110,9 @@ Through the development of this project, the following concepts were explored an
 * Handling bidirectional entity relationships in Hibernate.
 * Environment-based configuration for cloud deployment.
 * Debugging JDBC, Hibernate dialect, and database connectivity issues.
-* Deploying a production-ready Spring Boot application on Railway.
+* Integrating AI APIs and designing prompt-based recommendation systems.
+* Implementing retry handling and structured JSON responses for AI outputs.
+* Understanding connection pooling with HikariCP and resolving database connection issues.
 
 ---
 
